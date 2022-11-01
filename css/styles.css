@@ -1,0 +1,245 @@
+body{
+  background: #304352;
+  background: -webkit-linear-gradient(to right, #304352, #d7d2cc);
+  background: linear-gradient(to right, #b9e1ff, #d7d2cc);
+  min-height: 100vh;
+}
+
+.tarjeta{
+  background-color: white;
+}
+
+header, .alert{
+  z-index: 100;
+}
+
+button, .btn{
+  background-color: #240090;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.description{
+  height: 25px;
+  overflow: hidden;
+  transition: height .3s ease-in .3s;
+}
+.description:hover{
+  height: 80px;
+}
+.carrito{
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.othertarget{
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.table__productos{
+  display: flex;
+}
+.table__productos > img{
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.table__cantidad > input{
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.hide, .remove{
+  display: none;
+}
+
+.cart-bg{
+  background: #f53b57;
+  border-radius: 8px;
+}
+
+.blue {
+  background-color: #240090;
+}
+
+.form {
+  padding-top: 10px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.login-form {
+  width: 380px;
+  height: 450px;
+  margin: 20px;
+  background: #232D32;
+  border-radius: 10px;
+}
+
+.tarjeta-registro {
+  font-weight: 900;
+  padding-top: 20px;
+}
+
+
+
+
+
+
+.c1{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+  .c1-l{
+      flex: 1 1 50%;
+      background: #ced8f3;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 10px 10px 10px black;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      object-fit: cover;
+  }
+
+  .c1-r{
+      flex: 1 1 20%;
+      background: #ced8f3;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+
+      min-width: fit-content;
+
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+
+      box-shadow: 10px 10px 10px black;
+  }
+
+      .cuadro-enlace{
+
+          margin: 5px;
+          padding-left: 8px;
+          border-radius: 5px;
+
+          display: flex;
+          flex-flow: row;
+          align-items: center;
+      }
+
+.c2{
+  display: flex;
+  flex-wrap: wrap;
+}
+  .c2-l{
+      flex: 1 1 50%;
+      background: #f53b57;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+
+      min-width: fit-content;
+
+      box-shadow: 10px 10px 10px black;
+
+  }
+      .columnas{
+          margin: 45px;
+          display: flex;
+          justify-content: space-evenly;
+      }
+          .login{
+              display: flex;
+              flex-flow: column;
+              align-items: flex-start;
+              justify-content: center;
+              
+              min-width: fit-content;
+          }
+          .welcome{
+              display: flex;
+              flex-flow: column;
+              align-items: center;
+              justify-content: center;
+          }
+
+  .c2-r{
+      flex: 1 1 20%;
+      background: #f53b57;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+
+      min-width: 420px;
+
+      box-shadow: 10px 10px 10px black;
+
+  }
+      .cajattexto{
+          background: #4CAF50;
+          margin: 10px;
+      }
+
+.c3{
+  display: flex;
+  flex-wrap: wrap;
+}
+  .c3-l{
+      flex: 1 1 50%;
+      background: #ced8f3;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+
+      box-shadow: 10px 10px 10px black;
+
+  }
+      .columnas2{
+          display: flex;
+          flex-wrap: wrap;
+      }
+          .texto{
+              flex: 1 1 50%;
+              padding: 25px;
+
+              min-width: 220px;
+          }
+          .conversor{
+              background: #4e3bf5;
+              border-radius: 5px;
+              align-self: center;
+              min-width: 300px;
+
+              flex: 1 1 20%;
+              padding: 20px;
+
+          }
+  .c3-r{
+      flex: 1 1 20%;
+      background: #ced8f3;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+
+      box-shadow: 10px 10px 10px black;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }

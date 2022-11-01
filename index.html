@@ -1,93 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <a>Inicio</a>
-        <a>Sobre Nosotros</a>
-        <a>Galeria</a>
-        <a>Contacto</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bla"  />
+    <title>vanilla Javascript</title>
+    
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <header class="container-fluid position-sticky top-0">
+    <nav class="navbar navbar-expand-lg rounded">
+          <ul class="nav nav-pills text-center blue border-0 rounded container shadow mb-2 p-2" id="pills-tab" role="tablist">
+            <li class="nav-item text-primary flex-sm-fill" role="presentation">
+              <a class="nav-link active border-0 text-uppercase fw-bold" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Inicio</a>
+            </li>
+            <li class="nav-item flex-sm-fill" role="presentation">
+              <a class="nav-link border-0 text-uppercase fw-bold" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Productos</a>
+            </li>
+            <li class="nav-item flex-sm-fill" role="presentation">
+              <a class="nav-link border-0 text-uppercase fw-bold" id="pills-contacto-tab" data-bs-toggle="pill" data-bs-target="#pills-contacto" type="button" role="tab" aria-controls="pills-contacto" aria-selected="false">Contacto</a>
+            </li>
+            <li class="nav-item flex-sm-fill" role="presentation">
+              <a class="nav-link border-0 text-uppercase fw-bold" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mi Carrito</a>
+            </li>
+            <li class="nav-item flex-sm-fill" role="presentation">
+              <a class="nav-link border-0 text-uppercase fw-bold" id="pills-registro-tab" data-bs-toggle="pill" data-bs-target="#pills-registro" type="button" role="tab" aria-controls="pills-registro" aria-selected="false">Ingresar</a>
+            </li>
+          </ul>
     </nav>
+  </header>
 
-    <div class="central">
-        <div class="c1">
-            <div class="c1-l">
-                <img src="https://www.freewebheaders.com/wp-content/gallery/computer/cache/colorful-creative-lighted-buttons-computer-keyboard-web-header.jpg-nggid044247-ngg0dyn-0x0x100-00f0w010c010r110f110r010t010.jpg" style="width: 800px;">
-            </div>
-            <div class="c1-r">
-                <div class="cuadro-enlace">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1176/1176888.png" style="width:80px;">
-                    <a href="" target="_blank">Marcas disponibles</a>
-                </div>
-                <div class="cuadro-enlace">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1176/1176888.png" width="80px">
-                        <a href="" target="_blank">Accesorios</a>
-                </div>
-            </div>
-        </div>
-    
-        <div class="c2">
-            <div class="c2-l">
-                <div class="columnas">
-                    <div class="login">
-                            <h2>INICIAR SESION</h2>
-                            <input type="text" id="fname" name="fname" placeholder="Ingrese nombre usuario">
-                            <button type="button" id="miBoton">INGRESAR</button>
-                    </div>
-                    <div class="welcome">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" width="125px">
-                            <h2 id="bienvenido">BIENVENID(@)</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="c2-r">
-                <div id="cajattexto">
-                    <p>Nuestra confirmación de pedido no significa nuestra aceptación de su pedido, ni constituye una confirmación de nuestra oferta de venta. En cualquier momento después de recibir su pedido, podemos aceptar, rechazar o imponer límites de cantidad u otros a su pedido por cualquier motivo. Podemos imponer estos límites por persona, por hogar, por pedido o de cualquier otra forma. Si rechazamos, limitamos o modificamos su pedido, intentaremos notificarlo utilizando la dirección de correo electrónico que nos proporcione. Si cancelamos un pedido o parte de un pedido que ya le hemos cobrado, le reembolsaremos el monto total de la parte cancelada del pedido.
-                    </p>
-                </div>
-            </div>
-        </div>
-    
-        <div class="c3">
-            <div class="c3-l">
-                <div class="columnas2">
-                    <div class="texto">
-                        <p>Costos de envío y tiempo
-                            Costo de envío
-                            El costo de envío se calcula "por pedido", "por artículo" o "por libra" y se basa en la opción de envío que seleccione. A veces ofrecemos envío gratuito para opciones de envío específicas en categorías seleccionadas o envío gratuito en todo el sitio.
-                        </br></br>Tiempo de envío:
-                            Puede ver la fecha de llegada estimada de cada producto en la página del producto y durante el proceso de pago. Durante el pago, puede elegir una fecha de llegada estimada entre las opciones proporcionadas.
-                        </p>
-                    </div>
-                    <div class="conversor">
-                        <h2 id="resultadoc">CONVERSOR DOLAR A BS / BS A DOLAR</h2>
-                        <input type="text" id="bolivianos" name="fname" placeholder="Bs">
-                        <input type="text" id="dolar" name="fname" placeholder="$">
-                        <button type="button" id="conversor">Convertir</button>
-                    </div>
-                </div>
-                <p>Opciones de computación.
-                    Ya sea que esté buscando una computadora de alta potencia para jugar juegos de PC, una computadora pequeña para transmitir películas y mantenerse conectado mientras viaja, o si está buscando una computadora asequible para procesar textos y redes sociales, las últimas computadoras y tabletas equilibre la portabilidad con el rendimiento y la potencia que necesita. Y la gama de impresoras, software de computadora y accesorios le permiten crear la configuración ideal para adaptarse a su estilo de vida.<br/>
-                    Elegir una computadora de escritorio.
-                    En general, las computadoras de escritorio son conocidas por presentar chips de procesamiento robustos y discos duros más grandes. También encontrará varias formas de configurar y actualizar una computadora de escritorio de torre y monitor. Por estas razones, algunas de las mejores computadoras para juegos son las PC de escritorio. También puede elegir entre una amplia variedad de ratones para encontrar su ratón de computadora ideal.
-                </p>
-            </div>
-    
-            <div class="c3-r">
-                <img src="https://helios-i.mashable.com/imagery/articles/01maSdptSu8RcI0i0dMQgF3/hero-image.fill.size_1248x702.v1637866560.jpg" style="width:500px;">
-            </div>
-        </div>
+  <body>
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
     </div>
-    
-    <script src="index.js"></script>
-</body>
-<footer>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+      Producto removido!
+    </div>
 
-</footer>
+    <div class="container py-2">
+      <div class="tarjeta p-5 rounded shadow mb-5">
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <img src="https://assets.reedpopcdn.com/amazon-spring-sale-(1).jpg/BROK/thumbnail/1600x900/format/jpg/quality/80/amazon-spring-sale-(1).jpg" class="img-fluid" alt="...">
+            <section class="py-5">
+              <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                      <div class="container text-center p-4">
+                        <button type="button" class="btn btn-primary border-0 mb-4 shadow" style="width: 240px; height: 50px; font-size: large;">Ver Más Productos</button>
+                      </div>
+
+                      <h2>Encuentra los mejores accesorios para computadoras.</h2>
+                      <p class="lead">Ofrecemos dispositivos y accesorios para computadoras de distintas marcas. Ya sea que esté buscando una computadora de alta potencia para jugar juegos de PC, una computadora pequeña para transmitir películas y mantenerse conectado mientras viaja.</p>
+                      <ul>
+                          <li><a href="#">Tarjetas gráficas.</a></li>
+                          <li><a href="#">Dispositivos USB.</a></li>
+                          <li><a href="#">Discos Duros.</a></li>
+                          <li><a href="#">Audífonos.</a></li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+          <div class="tab-pane fade container" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row m-4">
+              <div class="col-sm">
+                <h2 class="" style="font-weight: bold;">Productos disponibles</h2>
+              </div>
+              <div class="col-sm-2">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Categorias</option>
+                  <option value="1">Mouses</option>
+                  <option value="2">Tarjetas Gráficas</option>
+                  <option value="3">Audífonos</option>
+                  <option value="4">Altavoces</option>
+                  <option value="5">Otros</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+    
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-white rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center">GeForce GTX-1660</h5>
+                  <img src="./img/pc1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="mb-3" style="font-size: 25px;">Precio: <span class="precio">$2700</span></h5>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-primary border-0 button">Añadir al Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-white rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center">Beats Studio3-Black</h5>
+                  <img src="./img/pc2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="mb-3" style="font-size: 25px;">Precio: <span class="precio">$25</span></h5>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-primary border-0 button">Añadir al Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-white rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center">Level 20 RGB-Gaming</h5>
+                  <img src="./img/pc3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="mb-3" style="font-size: 25px;">Precio: <span class="precio">$12</span></h5>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-primary border-0 button">Añadir al Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-white rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center">HyperX Predator-DDR4 RGB</h5>
+                  <img src="./img/pc4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="mb-3" style="font-size: 25px;">Precio: <span class="precio">$40</span></h5>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-primary border-0 button">Añadir al Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-white rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center">Beats Studio3-White</h5>
+                  <img src="./img/pc5.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="mb-3" style="font-size: 25px;">Precio: <span class="precio">$30</span></h5>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-primary border-0 button">Añadir al Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-white rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center">USB3.0-USB Mini Adaptador</h5>
+                  <img src="./img/pc6.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="mb-3" style="font-size: 25px;">Precio: <span class="precio">$8</span></h5>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-primary border-0 button">Añadir al Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-white rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center">USB-32GB</h5>
+                  <img src="./img/pc7.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="mb-3" style="font-size: 25px;">Precio: <span class="precio">$15</span></h5>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-primary border-0 button">Añadir al Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-white rounded" style="width: 20rem;">
+                  <h5 class="card-title pt-2 text-center">AudioEngine A5+-Wireless</h5>
+                  <img src="./img/pc8.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="mb-3" style="font-size: 25px;">Precio: <span class="precio">$115</span></h5>
+                    <div class="d-grid gap-2">
+                    <button  class="btn btn-primary border-0 button">Añadir al Carrito</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade othertarget" id="pills-contacto" role="tabpanel" aria-labelledby="pills-contacto-tab">
+            <section id="about">
+              <div class="container px-4">
+                  <div class="row gx-4 justify-content-center">
+                      <div class="col-lg-8">
+                        <h2 class="text-primary mb-4" style="font-weight: bold;">Contáctanos.</h2>
+                        <p class="lead" style="font-weight: bold;">Cel.: 73919315</p>
+                        <p class="lead" style="font-weight: bold;">Email: cibercenter-bo@mail.com</p>
+                        <p class="lead" style="font-weight: bold;">Telegram: CiberCenterBO</p>
+                        <p class="mb-0 text-secondary">Nota: Nuestra confirmación de pedido no significa nuestra aceptación de su pedido, ni constituye una confirmación de nuestra oferta de venta. En cualquier momento después de recibir su pedido, podemos aceptar, rechazar o imponer límites de cantidad u otros a su pedido por cualquier motivo.</p>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          </div>
+
+          <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="container-fluid p-4 shadow rounded">
+              <br>
+              <table class="table table-hover">
+                <thead>
+                  <tr class="text-primary">
+                    <th scope="col">#</th>
+                    <th scope="col">Productos</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                  </tr>
+                </thead>
+                <tbody class="tbody">
+                  
+                
+                  
+                </tbody>
+              </table>
+              <br><br>
+              <div class="row mx-4">
+                <div class="col">
+                  <h3 class="itemCartTotal">Total: 0</h3>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <button class="btn btn-success border-0">COMPRAR</button>
+                </div>
+              </div>
+            </div>  
+          </div>
+
+          <div class="tab-pane fade othertarget" id="pills-registro" role="tabpanel" aria-labelledby="pills-registro-tab">
+
+            <div class="global- container-fluid mt-4 w-50">
+              <div class="card register-form">
+                <div class="card-body">
+
+                  <h1 class="tarjeta-registro text-center">REGISTRO</h1>
+                  <div class="card-text">
+
+                    <form id="formulario">
+
+                      <div class="mb-3">
+                        <label>Nombre de usuario.</label>
+                        <input type="text" id="titulo" class="form-control" placeholder="Ingresar nombre de usuario.">
+                      </div>
+
+                      <div class="mb-3">
+                        <label>Correo electrónico.</label>
+                        <input type="email" id="descripcion" class="form-control" placeholder="Ingresar Email.">
+                      </div>
+
+                      <div class="mb-3">
+                        <label>Contraseña.</label>
+                        <input type="password" id="precio" class="form-control" placeholder="Ingresar contraseña.">
+                      </div>
+
+                      <button type="submit" class="btn btn-primary border-0 btn-block">Agregar</button>
+                    </form>
+
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          
+        </div>
+
+      </div>
+      
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/formulario.js"></script>
+  </body>
+  
+  <footer class="bg-black p-3 mt-5 rounded">
+    <p class="text-center m-0 text-muted">CIBER-CENTER<br>2022</p>
+  </footer>
 </html>
